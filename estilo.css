@@ -1,0 +1,255 @@
+/* "*" aplica a todos os emelementos do site */
+
+/* ESTILO GERAL */
+@font-face {
+  font-family: Heebo;
+  src: url("fonts/Heebo-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #001f36;
+  height: 100%;
+}
+
+.interface {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #79ae92;
+  border: 0;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #79ae92;
+  transform: scale(1.05);
+}
+
+h2.titulo {
+  color: azure;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2.5rem 4%;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 2.5rem 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #79ae92;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: azure;
+  transition: 0.3s;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 3rem;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-site {
+  padding: 2.5rem 4%;
+}
+
+section.topo-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+section.topo-site h1 {
+  color: azure;
+  font-size: 2.5rem;
+}
+
+.topo-site .txt-site p {
+  color: azure;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.topo-site .img-site img {
+  border-radius: 40%;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ESTILO PROJETOS */
+
+section .projetos {
+  padding: 2.5rem 4%;
+}
+
+.projetos .projetos-box {
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 20px;
+  margin: 3rem 125px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.projetos .projetos-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #ffffff67;
+}
+
+.projetos .projetos-box i {
+  font-size: 3.5rem;
+  color: #79ae92;
+}
+
+.projetos .projetos-box h3 {
+  color: azure;
+  font-size: 1.75rem;
+  margin: 15px 0;
+}
+
+.projetos .projetos-box a {
+  color: azure;
+  text-decoration: none;
+}
+
+/* ESTILO SOBRE */
+
+section.sobre {
+  padding: 2.5rem 4%;
+}
+
+section.sobre .flex {
+  text-align: center;
+}
+
+.sobre .txt-sobre h2 {
+  color: azure;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.sobre .txt-sobre p {
+  color: azure;
+  font-size: 1.2rem;
+}
+
+.sobre .txt-sobre .btn-social button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #79ae92;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 1rem 5px;
+  transition: 0.2s;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+
+section.formulario {
+  padding: 2.5rem 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: rgba(252, 252, 252, 0.767);
+  border: none;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #79ae92;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ESTILO FORMAÇÃO */
+
+section.escolaridade .flex {
+  text-align: center;
+  justify-content: center;
+}
+
+.txt-escol ul {
+  list-style-type: none;
+}
+
+.escolaridade .txt-escol h2 {
+  color: azure;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin: 2.5rem 0;
+}
+
+.escolaridade .txt-escol li {
+  color: azure;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
